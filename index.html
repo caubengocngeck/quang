@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quang's Soul</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nhạc nền -->
+  <audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2023/03/28/audio_8f0b42c40d.mp3?filename=chill-lofi-14390.mp3" autoplay loop></audio>
+
+  <!-- Hộp nhập tên -->
+  <div id="namePrompt" class="overlay">
+    <div class="prompt-box">
+      <p>Bạn là ai đó?</p>
+      <input type="text" id="username" placeholder="Nhập tên của bạn...">
+      <button id="enterBtn">Vào</button>
+    </div>
+  </div>
+
+  <!-- Cảnh nền và nhân vật -->
+  <div class="scene" id="scene">
+    <div class="background"></div>
+    <div class="ground"></div>
+    <img src="https://i.ibb.co/4snzdbp/chibi-soccer.png" id="character" draggable="false" alt="MQuang">
+    <img src="https://i.ibb.co/0Ym7drT/ball.png" id="ball" draggable="false" alt="ball">
+    <div id="speech"></div>
+  </div>
+
+  <!-- Khung chat -->
+  <div id="chatbox">
+    <div id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Nói gì đó với MQuang...">
+    <button id="sendBtn">Gửi</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
